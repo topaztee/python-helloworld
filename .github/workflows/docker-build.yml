@@ -42,4 +42,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ud064-python-helloworld/python-helloworld:latest
+          tags: topazt/ud064-python-helloworld:latest
