@@ -18,7 +18,7 @@ def healthcheck():
 @app.route('/metrics')
 def metrics():
     response = app.response_class(
-            response=json.dumps({"status":"success","code":0,"data":{"UserCount":140,"UserCountActive":23}}),
+            response=json.dumps({"status":"success","code":0,"data":{"UserCount":140000,"UserCountActive":23000}}),
             status=200,
             mimetype='application/json'
     )
@@ -34,5 +34,5 @@ def hello():
 if __name__ == "__main__":
     ## stream logs to a file
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
-    
+
     app.run(host='0.0.0.0')
